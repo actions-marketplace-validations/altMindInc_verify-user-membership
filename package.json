@@ -1,0 +1,24 @@
+{
+  "name": "verify-user-membership",
+  "version": "1.0.0",
+  "description": "Github action to verify user membership access to specified team in soecified organization.",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js --license licenses.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altMindInc/verify-user-membership.git"
+  },
+  "author": "Ruchi Jain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/altMindInc/verify-user-membership/issues"
+  },
+  "homepage": "https://github.com/altMindInc/verify-user-membership#readme",
+  "dependencies": {
+    "@actions/core": "^1.8.0",
+    "@actions/github": "^5.0.1",
+    "@vercel/ncc": "^0.33.4"
+  }
+}

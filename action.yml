@@ -1,0 +1,21 @@
+name: 'Verify user membership'
+description: 'Greet'
+inputs:
+  username:
+    description: 'which user to verify'
+    required: true
+  team:
+    description: 'which team to verify against'
+    required: true
+  organization:
+    description: 'which organization to use'
+    required: true
+  token:
+    description: 'GITHUB_TOKEN to use'
+    required: true
+outputs:
+  isUserMember:
+    description: 'returns true is user is a member else false'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
