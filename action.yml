@@ -1,5 +1,5 @@
 name: 'Verify user membership'
-description: 'Greet'
+description: 'Verify if user belongs to a team within an organization'
 inputs:
   username:
     description: 'which user to verify'
@@ -19,3 +19,6 @@ outputs:
 runs:
   using: 'node16'
   main: 'dist/index.js'
+branding:
+  icon: 'check-circle'
+  color: 'orange'
